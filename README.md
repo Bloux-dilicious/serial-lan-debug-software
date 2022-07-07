@@ -165,30 +165,28 @@ LAN配置中，除上文强调可在连接未关闭的前提下更改的配置�
 >
 > **Auto模式**：Y轴的显示范围由历史极值与当前显示数据范围的极值共同决定。
 > $$
-> Y_{max}=max\left(Y_{max},\frac{max}{x_{min}\leq x\leq x_{max}}Y_x \right)
+> Y_{max}=max\left\{Y_{max},{\,\,} \overset{\pmb{max}}{x_{min}\leq x\leq x_{max}}Y_x \right\}
+> 
 > \tag{式1}
 > $$
 >
 > $$
-> Y_{min}=min\left(Y_{min},\frac{min}{x_{min}\leq x\leq x_{max}}Y_x \right)
+> Y_{min}=min\left\{Y_{min},{\,\,} \overset{\pmb{min}}{x_{min}\leq x\leq x_{max}}Y_x \right\}
 > \tag{式2}
 > $$
 >
 > **Lock模式**：Y轴的显示范围仅由当前显示数据范围的极值决定。
 > $$
-> Y_{max}=\frac{max}{x_{min}\leq x\leq x_{max}}Y_x
+> Y_{max}=\overset{\pmb{max}}{x_{min}\leq x\leq x_{max}}Y_x
 > \tag{式3}
 > $$
 >
 > $$
-> Y_{min}=\frac{min}{x_{min}\leq x\leq x_{max}}Y_x
+> Y_{min}=\overset{\pmb{min}}{x_{min}\leq x\leq x_{max}}Y_x
 > \tag{式4}
 > $$
 
-- 
-
-> **数据跳转**：鼠标左键点击波形区域即可实现文本区中文本跳转到指定数据进行显示。
->
+- **数据跳转**：鼠标左键点击波形区域即可实现文本区中文本跳转到指定数据进行显示。
 
 - **数据标签显示**：当鼠标悬停在波形线上时即可显示数据标签。
 
@@ -506,7 +504,7 @@ Send(sendframe, frame_lenth++);
 
 ## 2. 参数传输
 
-参考[参数调节例程](./参数调节例程)。
+参考[参数调节例程](./参数调节例程/Project)。
 
 ## 3. 图像传输
 
