@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cute.exe" size="599968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cute.exe" size="600480">
       <assemblyIdentity name="Cute" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>My9Rqs6yLqYWPSUxo9gKID9mBXDmvDqthv3DAGFmjlA=</dsig:DigestValue>
+        <dsig:DigestValue>lgqAcVECksIcbWlcL5nKUtyYtMgO7yby3W0DI/noDmQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
