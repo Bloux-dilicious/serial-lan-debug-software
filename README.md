@@ -44,7 +44,9 @@
 
 **1.2.7** 清空波形显示将初始化波形区状态
 
-**1.2.8** 修复参数调节页面示波器显示bug
+**1.2.8** 修复参数调节页面波形区显示bug
+
+**1.2.9** 更新Readme二值化传图example
 
 
 ---
@@ -534,7 +536,7 @@ typedef __packed struct
 ```C
 //初始化
 uint8_t image[60][81]; 
-uint8_t send_data[100];
+uint8_t send_data[601];//需大于（图像总大小/8）
 
 //赋值
 ///数据清空
@@ -552,7 +554,7 @@ for(int i = 0; i < header.height; i++)
 {
     for(int j = 0; j < header.width; j++)
     {
-        if(image[i][j] > 0) send_data[7 + (i * header.width + j) / 8] |= 1 << ((i * header.width + j) % 8);
+        if(image[i][j] > 0) send_data[(i * header.width + j) / 8] |= 1 << ((i * header.width + j) % 8);
     }
 }
 ///帧尾

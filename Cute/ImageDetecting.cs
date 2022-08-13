@@ -2,7 +2,7 @@ using System;
 
 namespace Cute.Pic
 {
-    class ImageDetector
+    unsafe class ImageDetector
     {
         #region 预处理
 
@@ -13,7 +13,7 @@ namespace Cute.Pic
         /// <param name="Image_W">图像宽度</param>
         /// <param name="Image_H">图像高度</param>
         /// <returns>文本显示字符串</returns>
-        public unsafe string PreProcessing(byte* Image, int Image_W, int Image_H)
+        public string PreProcessing(byte* Image, int Image_W, int Image_H)
         {
             ///均值法求阈值
             UInt32 sum = 0;
@@ -47,7 +47,7 @@ namespace Cute.Pic
         /// <param name="Image_W">图像宽度</param>
         /// <param name="Image_H">图像高度</param>
         /// <returns>文本显示字符串</returns>
-        public unsafe string Detecting(byte* Image, int Image_W, int Image_H)
+        public string Detecting(byte* Image, int Image_W, int Image_H)
         {
             int[] Left_Line = new int[Image_H]; //左边界
             int[] Right_Line = new int[Image_H]; //右边界
