@@ -1,3 +1,5 @@
+**B站使用教程**： https://www.bilibili.com/video/BV1st4y1G7GB/
+
 # 修订记录
 
 **1.0.1** 参数调节页面，切换、单击参数时自动全选
